@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+  </head>
+  <body>
+    <div class="jumbotron text-center">
+      <h1>Movies Database</h1>
+    </div>
+    <div class="container">
+      <div class="input-group">
+        <input id="movieName" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-default" onclick="Search()">Go!</button>
+        </span>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Title</h4>
+          <p id="movieTitle"></p>
+        </div>
+        <div class="col-md-6">
+          <h4>Release</h4>
+          <p id="movieRelease"></p>
+        </div>
+        <div class="col-md-6">
+          <h4>Category</h4>
+          <p id="movieCategory"></p>
+        </div>
+        <div class="col-md-6">
+          <h4>Actors</h4>
+          <p id="movieActors"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
