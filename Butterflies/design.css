@@ -1,0 +1,55 @@
+body{
+  background: #f5f5f5 !important;
+}
+
+.recherche{
+  background: #ffffff;
+  margin-left: 100px ;
+  margin-right: 100px;
+  margin-top: 150px;
+  height: 160px;
+  padding: 16px;
+}
+
+h3{
+  text-align: center;
+}
+
+
+  input{
+    width:300px !important;
+  }
+
+  .larg{
+    width:220px !important;
+  }
+  .large{
+    width: 150px !important;
+  }
+
+
+
+  .vert{
+    width: 200px;
+    background: #1db954 !important;
+    color: #ffffff !important;
+
+  }
+
+
+.villes{
+  width: 150px;
+  margin-top: 5px;
+}
+.categories{
+  width: 200px;
+  margin-top: 5px;
+}
+.espace{
+  margin-left: 95px !important;
+}
+
+
+.bleu{
+  color:#1976d2 !important;
+}
