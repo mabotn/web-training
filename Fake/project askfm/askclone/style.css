@@ -3,11 +3,12 @@
   height: 500px ;
 
 }
-.button{
+.buttons{
   color:#FF643C;
   background-color: white;
   padding :10px;
   margin:40px 20px 0px;
+  border-radius: 12px 12px 12px 12px;
 
 }
 .container{
