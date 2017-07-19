@@ -45,3 +45,25 @@ body{
   background: #FFFFED
 
 }
+.propos{
+  padding :10px;
+}
+.propos i{
+  color:#C0C0C0;
+}
+
+.propos a{
+  color:#C0C0C0;
+  margin : 10px;
+
+}
+.propos div {
+  margin-top: 12px;
+}
+
+.propos{
+  margin-left:800px;
+  margin-top: 0px;
+  background: white;
+
+}
