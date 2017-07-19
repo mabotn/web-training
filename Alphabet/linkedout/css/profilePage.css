@@ -1,0 +1,17 @@
+/*Profile Page */
+body#profilePage{
+  background-image: url('https://content.linkedin.com/content/dam/premium/site/img/Premium-Heroes-02.png');
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-color: #c6c6de;;
+  height:50%;
+  z-index: -1;
+  position: absolute;
+}
+
+#profilePhoto {
+  margin: 28% 15%;
+  border-radius: 100px 0 100px 0;
+  width:17%;
+}
+  /*End profile Page
