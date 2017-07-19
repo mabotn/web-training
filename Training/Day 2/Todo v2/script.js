@@ -1,9 +1,19 @@
 var app = angular.module('app', [])
 
 app.controller('ctrl', function($scope) {
-  $scope.todoItems = ['Task 1', 'Task 2', 'Task 3']
+  $scope.newTask = ''
+  $scope.todoItems = []
 
-  $scope.add = function() {}
-  $scope.delete = function() {}
-  $scope.clear = function() {}
+  $scope.add = function() {
+    $scope.todoItems.push($scope.newTask)
+    $scope.newTask = ''
+  }
+
+  $scope.delete = function(index) {
+    $scope.todoItems.splice(index, 1)
+  }
+
+  $scope.clear = function() {
+    $scope.todoItems = []
+  }
 })
