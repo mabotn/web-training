@@ -45,9 +45,7 @@ body{
   background: #FFFFED
 
 }
-.propos{
-  padding :10px;
-}
+
 .propos i{
   color:#C0C0C0;
 }
@@ -62,7 +60,8 @@ body{
 }
 
 .propos{
-  margin-left:800px;
+  padding :10px;
+  margin-left:20px;
   margin-top: 0px;
   background: white;
 
