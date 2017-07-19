@@ -1,9 +1,9 @@
-<?php 
+<?php
 require '_header.html';
 ?>
 <form action="#upload" method="post" enctype="multipart/form-data">
 <br><br><br><br><br><br><br>
-	
+
 	<br><br>
 	<table>
 		<tr>
@@ -68,7 +68,7 @@ require '_header.html';
 </form>
 
 <div id="upload">
-<?php 
+<?php
 
 	if(isset($_POST['sumit']))
 	{
@@ -81,7 +81,7 @@ require '_header.html';
 			$image = file_get_contents($image);
 			$image = base64_encode($image);
 			//saveimage($name,$image);
-			
+
 		}
 
 		$name = $_POST['name'];
@@ -93,25 +93,25 @@ require '_header.html';
 		$requeteSql = "INSERT INTO produits(name,description,categorie,price,stock,image) VALUES('$name','$description', '$categ', '$price','$stock','$image')";
 		$DB->update($requeteSql);
 	}
-	
+
 	/*function saveimage($name,$image)
 	{
 		$con = mysqli_connect('localhost','root','','formation');
 		$id1 = $DB->query()
 		$qry = "UPDATE produits SET image = '$image' WHERE id=";
 		$result = mysqli_query($con,$qry);
-		if ($result) 
+		if ($result)
 			echo "<br> Image Uploaded.";
 		else
 			echo "<br> Image not Uploaded.";
 
 
 	}*/
-	
-
-	
 
 
-	
+
+
+
+
 ?>
 </div>
