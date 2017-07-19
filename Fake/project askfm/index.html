@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"> </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#"> <img id="logo" src="ASKfm-logo.svg.png" alt="askfm"> </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li id="flux"><a href="#">Flux</a></li>
+        <li id="questions"><a href="#">Questions</a></li>
+        <li id="profil" class="active"><a href="#">Profil</a></li>
+        <li ><a id="amis" href="#">Amis</a></li>
+        <li id="notifications"><a href="#">Notifications</a></li>
+        <li ><a href="#"> <span  class="fa fa-cog "></span> </a></li>
+        <li ><a href="#"><span  class="fa fa-plus-square"></span> </a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container">
+<div class="jumbotron cover text-center">
+  <img class="ask" src="ask-01.jpg" alt="ask">
+  <span class="" id="imaage"><img id="useer"src="avatar.png" alt="user"></span>
+  <p id="name">wafa klabi</p>
+  <p id="userid">@wafaklabi</p>
+  <div class="profile-label">
+    <span class="abonne">
+      Abonnés:
+      <strong>0</strong>
+    </span>
+  </div>
+</div>
+<div class="row">
+  <div id="question" class="col-md-8" style="margin-left:15px">
+    <h3>Poser une question à @wafaklabi :</h3>
+    <textarea id="text" name="name" placeholder="Quoi, quand, pourquoi..pose une question" ></textarea>
+
+    <label><input type="checkbox" id="box" checked="checked"> Demander anonymement</label>
+    <button id="demander" class="btn pull-right">Demander</button>
+
+  </div>
+  <div class="col-md-3 propos">
+    <span><b style="size:110%">A propos de moi </b></span>
+
+      <a href="#" ><i class="fa fa-pencil" aria-hidden="true"></i> Modifier le profil...</a>
+      <br>
+
+    <div >
+      <a href="#"><i class="fa fa-user" aria-hidden="true"></i>Raconte nous quelque chose sur toi...</a>
+    </div>
+    <div >
+      <a href="#"><i class="fa fa-map-marker" aria-hidden="true"></i>Ajoute un emplacement...</a>
+    </div>
+    <div >
+      <a href="#"><i class="fa fa-link" aria-hidden="true"></i>Ajoute des liens web ...</a>
+    </div>
+  <div>
+      <a href="#"><i class="fa fa-gratipay" aria-hidden="true"></i>Ajoute des intérêts...</a>
+  </div>
+
+  </div>
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>

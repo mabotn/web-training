@@ -1,6 +1,54 @@
 <?php 
 require '_header.html';
 ?>
+<!-- carousel -->
+<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel" data-interval="2500" >
+			<!-- Indicators -->
+			
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+			    <div class="item active">
+			    	<img src="slider1.jpg" alt="First slide" style="width: 100vw;height: 80vh" class="img-responsive">
+                    <!-- Static Header -->
+                    <div class="header-text ">
+                        <div class="col-md-12 text-left">
+                            
+                        </div>
+                        <div class="col-md-12 text-right">
+                            
+                        </div>
+                    </div><!-- /header-text -->
+			    </div>
+			    <div class="item" style="height: 100vh">
+			    	<img src="slider1.jpg" alt="First slide" style="width: 100vw;height: 80vh" class="img-responsive">
+
+			    	<!-- Static Header -->
+                    <div class="header-text ">
+                        <div class="col-md-12 text-left">
+                            
+                        </div>
+                        <div class="col-md-12 text-right">
+                            
+                        </div>
+                    </div><!-- /header-text -->
+			    </div>
+			    <div class="item">
+			    	<img src="slider1.jpg" alt="First slide" style="width: 100vw;height: 80vh" class="img-responsive">
+			    	
+			    	<!-- Static Header -->
+                    <div class="header-text">
+                        <div class="col-md-12 text-left">
+                            
+                        </div>
+                        <div class="col-md-12 text-right">
+                            
+                        </div>
+                    </div><!-- /header-text -->
+			    </div>
+			</div>
+			
+		</div><!-- /carousel -->
+
 <!-- les catégories -->
 
 <div class="container cat">
