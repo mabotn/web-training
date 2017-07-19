@@ -1,7 +1,10 @@
 <?php
 require '_header.html';
+
 $idProduit = $_GET['id'];
 $produits =  $DB->query("SELECT * FROM produits WHERE id= '$idProduit'" ) ;
+$vu = "UPDATE produits SET vu = vu+1 WHERE id=$idProduit";
+$DB->update($vu);
 $nameCategorie = $_GET['nameOfType'];
 $produitsCategorie =  $DB->query("SELECT * FROM produits WHERE categorie like 'watch'") ;
 ?>
