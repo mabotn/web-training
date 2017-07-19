@@ -4,12 +4,7 @@
 
 }
 .buttons{
-  color:#FF643C;
-  background-color: white;
-  padding :10px;
-  margin:40px 20px 0px;
-  border-radius: 12px 12px 12px 12px;
-
+  
 }
 .container{
 
@@ -59,9 +54,11 @@
 }
 .list {
 position: absolute;
-margin-left:
-
-
+margin-left:270px;
+margin-top: 20px;
+}
+.fa-globe{
+  color:#FF643C;
 
 }
 #line{
