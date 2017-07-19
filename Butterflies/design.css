@@ -1,14 +1,23 @@
 body{
-  background: #f5f5f5 !important;
+  ;
 }
 
 .recherche{
-  background: #ffffff;
+  background: #ffffff !important;
   margin-left: 100px ;
   margin-right: 100px;
   margin-top: 150px;
   height: 160px;
   padding: 16px;
+  position: relative
+}
+
+.margle{
+  margin-left: 20px;
+}
+
+xx{
+  font-weight: bold !important;
 }
 
 h3{
