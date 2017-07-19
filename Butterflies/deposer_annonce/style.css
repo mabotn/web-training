@@ -12,3 +12,25 @@ body {
   text-align: center;
   background: #1976d2;
 }
+.dropdown{
+width: 500px !important ;
+}
+.btn-large {
+width:133% !important;
+}
+.bordering
+{
+  width: 89%;
+background-color: #ffffff;
+
+}
+.p{
+
+  color: #979797;
+}
+.btn-default.btn-on.active{background-color: #5BB75B;color: white;}
+
+.left {
+
+  margin-right: 80px;
+}
