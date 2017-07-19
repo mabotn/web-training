@@ -44,6 +44,28 @@ body{
 #question {
   background: #FFFFED;
   margin: 15px;
+  margin-top: 0px;
+
+}
+
+.propos i{
+  color:#C0C0C0;
+}
+
+.propos a{
+  color:#C0C0C0;
+  margin : 10px;
+
+}
+.propos div {
+  margin-top: 12px;
+}
+
+.propos{
+  padding :10px;
+  margin-left:20px;
+  margin-top: 0px;
+  background: white;
 
 }
 #text {
@@ -54,5 +76,4 @@ body{
 }
 #demander {
   background-color: #FF6648;
-  color: white;
-}
+  color: white;}
