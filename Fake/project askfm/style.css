@@ -1,0 +1,47 @@
+
+.navbar-default .navbar-nav>li>a {
+    color: #ff6648;
+}
+#logo{
+  height: 20px;
+}
+body{
+  background: #393944;
+}
+.ask {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+}
+.jumbotron{
+    padding: 0px;
+    position: relative;
+    background: transparent;
+}
+
+.cover {
+  padding: 0px !important;
+}
+
+#imaage img {
+  margin-top: 25px;
+  height: 125px;
+}
+#name{
+  color: white;
+}
+#userid{
+  color: white;
+}
+.abonne{
+  color: white;
+  background: rgba(0,0,0,0.5) ;
+  padding: 10px;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+}
+#question {
+  background: #FFFFED
+
+}
