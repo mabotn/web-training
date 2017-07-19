@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.min.js" charset="utf-8"></script>
+    <script src="script.js" charset="utf-8"></script>
+  </head>
+  <body ng-app="app" ng-controller="ctrl">
+    <header>
+      <input type="text" placeholder="Add new task">
+      <button>Add</button>
+      <button>Clear all</button>
+    </header>
+
+    <ul>
+      <li ng-repeat="item in todoItems">
+        <p>{{item}} <button ng-click="delete()">Delete me</button></p>
+      </li>
+    </ul>
+  </body>
+</html>
