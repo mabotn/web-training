@@ -1,0 +1,38 @@
+.jumbotron {
+  background: url('cat.jpg');
+  height: 100vh;
+  background-size: cover;
+  margin-bottom: 0px;
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .5)
+}
+
+.container {
+  position: relative;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  color: white;
+}
+
+.btn-default {
+  background: transparent;
+  color: white;
+  margin-top: 20px;
+  border: 2px solid white;
+  font-size: 22px;
+  padding: 12px 36px;
+}
+
+.btn-default:hover {
+  background: white;
+}

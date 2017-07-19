@@ -1,0 +1,75 @@
+.color{
+  background-color: #FF643C ;
+  height: 500px ;
+
+}
+.buttons{
+  
+}
+.container{
+
+}
+.click{
+  background-color: white;
+  color:#FF643C;
+}
+
+.people a {
+
+  background: transparent 50% 50% no-repeat;
+    background-size: cover;
+   border-radius: 50%;
+    float: left;
+    height: 35px;
+    margin-right: 7px;
+   overflow: hidden;
+    text-indent: 35px;
+    width: 35px;
+
+}
+
+
+
+#right
+{ height: 80px;
+  width: 80px;
+  margin-bottom: 0px;
+  margin-right: px;
+  margin-left:40px;
+  z-index: -1;
+}
+.list a{
+  margin-left: 5px;
+  margin-right: 5px;max-width:
+  font-size: 85%;
+
+  color:#FF643C;
+}
+.people{
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  width: 720px;
+}
+.list {
+position: absolute;
+margin-left:
+
+
+
+}
+#line{
+  margin-top: 50px;
+  width:750px;
+}
+
+#globe{
+  margin-top: 10px;
+  margin-left: auto;
+
+}
+
+.size{
+
+}

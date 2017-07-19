@@ -7,8 +7,62 @@
 }
 body{
   background: #393944;
-  }
 }
-.ask{
+.ask {
   width: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+}
+.jumbotron{
+    padding: 0px;
+    position: relative;
+    background: transparent;
+}
+
+.cover {
+  padding: 0px !important;
+}
+
+#imaage img {
+  margin-top: 25px;
+  height: 125px;
+}
+#name{
+  color: white;
+}
+#userid{
+  color: white;
+}
+.abonne{
+  color: white;
+  background: rgba(0,0,0,0.5) ;
+  padding: 10px;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+}
+#question {
+  background: #FFFFED
+
+}
+
+.propos i{
+  color:#C0C0C0;
+}
+
+.propos a{
+  color:#C0C0C0;
+  margin : 10px;
+
+}
+.propos div {
+  margin-top: 12px;
+}
+
+.propos{
+  padding :10px;
+  margin-left:20px;
+  margin-top: 0px;
+  background: white;
+
 }

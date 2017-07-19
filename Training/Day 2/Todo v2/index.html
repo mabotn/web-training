@@ -9,14 +9,14 @@
   </head>
   <body ng-app="app" ng-controller="ctrl">
     <header>
-      <input type="text" placeholder="Add new task">
-      <button>Add</button>
-      <button>Clear all</button>
+      <input type="text" placeholder="Add new task" ng-model="newTask">
+      <button ng-click="add()">Add</button>
+      <button ng-click="clear()">Clear all</button>
     </header>
 
     <ul>
       <li ng-repeat="item in todoItems">
-        <p>{{item}} <button ng-click="delete()">Delete me</button></p>
+        <p>{{item}} <button ng-click="delete($index)">Delete me</button></p>
       </li>
     </ul>
   </body>
