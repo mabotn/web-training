@@ -3,6 +3,7 @@ require '_header.html';
 ?>
 <form action="#upload" method="post" enctype="multipart/form-data">
 <br><br><br><br><br><br><br>
+<center><h1>Upload Product into Database</h1></center>
 
 	<br><br>
 	<table>
