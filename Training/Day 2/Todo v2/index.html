@@ -16,7 +16,8 @@
 
     <ul>
       <li ng-repeat="item in todoItems">
-        <p>{{item}} <button ng-click="delete($index)">Delete me</button></p>
+        <p>{{item}} <button ng-click="delete($index)">Delete me</button>
+        <button ng-click="edit($index)" >Edit me</button></p>
       </li>
     </ul>
   </body>
