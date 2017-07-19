@@ -1,0 +1,20 @@
+body {
+
+  background-color: #F5F5F5 !important;
+}
+.circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: -20px;
+  text-align: center;
+  background: #1976d2;
+  margin-top: 20px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.container{
+  padding: 20px;
+}
