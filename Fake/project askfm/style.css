@@ -42,6 +42,17 @@ body{
   border-radius: 10px 10px 10px 10px;
 }
 #question {
-  background: #FFFFED
+  background: #FFFFED;
+  margin: 15px;
 
+}
+#text {
+  width: 100%;
+}
+#box {
+  background-color: #FF6648;
+}
+#demander {
+  background-color: #FF6648;
+  color: white;
 }
