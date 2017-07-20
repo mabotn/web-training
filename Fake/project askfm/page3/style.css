@@ -80,17 +80,24 @@ body{
 #demander {
   background-color: #FF6648;
   color: white;}
-#button1{
-  height: 38px;
-  width: 190px;
-  color: #FF6648;
-  border-radius : 19px 19px 19px 19px ;
-  border-color: #F2F2F9;
-  border-width:medium;
-  background-color:white;
-
-
+#buttonbhim{
+  height: 38px !important;
+  width: 190px !important;
+  color:#FF6648 !important;
+  border-radius : 19px 19px 19px 19px !important;
+  border-color: #F2F2F9 !important;
+  border-width:medium !important;
+  background-color: white!important;
+  text-align: center !important;
+  padding-right: 5px !important;
 }
+ .bhemaH{
+   color: #FF6648 !important;
+   padding-left: 5px !important;
+   padding-right: 0px !important ;
+   opacity: 1 !imporetant ;
+ }
+
 .badge{
   background-color: white ;
   color :#FF6648 ;
@@ -101,7 +108,7 @@ body{
   border-bottom-width:thick;
 
 }
-.fa fa-share-square-o{
+.fa-share-square-o{
   color:#FF6648 !important ;
   margin-left: 5px !important;
   margin-right: 0px !important ;
