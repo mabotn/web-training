@@ -5,8 +5,6 @@ $idProduit = $_GET['id'];
 $produits =  $DB->query("SELECT * FROM produits WHERE id= '$idProduit'" ) ;
 $vu = "UPDATE produits SET vu = vu+1 WHERE id=$idProduit";
 $DB->update($vu);
-$nameCategorie = $_GET['nameOfType'];
-$produitsCategorie =  $DB->query("SELECT * FROM produits WHERE categorie like 'watch'") ;
 ?>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.0/css/bootstrap.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
@@ -19,6 +17,7 @@ $produitsCategorie =  $DB->query("SELECT * FROM produits WHERE categorie like 'w
   <!-- container -->
   <div class="container">
 <?php foreach ($produits as $prod): ?>
+<?php $produitsCategorie = $prod->categorie ;?>
     <div class="row">
       <div class="col-md-4">
         <a href="#" class="thumbnail" style="margin-top: 20px;">
@@ -45,11 +44,11 @@ $produitsCategorie =  $DB->query("SELECT * FROM produits WHERE categorie like 'w
         <div class="desc">
           <?= $prod->description ;?>
           <br>
-          Lorem ipsum dolor sit amet, solet laoreet deseruisse vix ut, cum ad commodo appareat iudicabit. Mutat accusamus urbanitas an his, discere postulant sit at. His ex postea reprehendunt, vel ad erant explicari, sit cu enim fastidii. Nam magna porro eu, choro volumus erroribus ei pro. Ea sea zril percipit iudicabit, ex est delenit offendit consulatu. Duo te agam consul, summo legendos deserunt ius ne. Ius mazim urbanitas in.
+          
         </div>
         <br>
         <div class="price">
-         <span>Price:</span> $ <?=$prod->price;?>
+         <span>Price:</span><?=$prod->price;?>TND
        </div><br>
         <button style="background: linear-gradient(to bottom,#f5d78e,#eeb933);border-radius: 2px;" type="button" name="button" id="submit"><i class="fa fa-shopping-cart"></i> Add to card</button>
       </div>
@@ -62,19 +61,28 @@ $produitsCategorie =  $DB->query("SELECT * FROM produits WHERE categorie like 'w
     </div>
 
 
+
+<!-- search for items in the same categorie -->
+<?php 
+$sql = "SELECT * FROM produits WHERE categorie like '%$produitsCategorie%'";
+$result = $DB->query($sql);
+?>
+
     <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-12">
-      <div class="carousel slide" id="itemslider">
+      <div class="carousel slide" id="itemslider" data-ride="carousel" data-interval="2000">
         <div class="carousel-inner">
           <div class="item active">
 
+
+
           </div>
-          <?php foreach ($produitsCategorie as $prodC): ?>
+          <?php foreach ($result as $prodC): ?>
           <div class="item">
             <div class="col-xs-12 col-sm-6 col-md-2">
               <a href="#"><?php echo'<img src="data:image;base64,'.$prodC->image.'" class="img-responsive center-block">'; ?></a>
               <h4 class="text-center"><?= $prodC->name ;?></h4>
-              <h5 class="text-center"> $ <?=$prodC->price;?></h5>
+              <h5 class="text-center"><?=$prodC->price;?> TND</h5>
             </div>
           </div>
           <?php endforeach ?>
@@ -91,4 +99,6 @@ $produitsCategorie =  $DB->query("SELECT * FROM produits WHERE categorie like 'w
 
   </div>
   <!-- container end -->
-  </body>
+<?php
+require '_footer.html';
+?>

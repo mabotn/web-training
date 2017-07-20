@@ -13,7 +13,7 @@ $produits =  $DB->query("SELECT * FROM produits WHERE categorie like '$nameCateg
 	      <div class="caption">
 	        <h3><?= $prod->name;?></h3>
 	        
-	        <a href="afficher.php?id=<?= $prod->id;?>"><b><?= $prod->description ;?></b></a>
+	        <a href="productDetails.php?id=<?= $prod->id;?>&?nameOfType=<?= $prod->categorie;?>"><b><?= $prod->description ;?></b></a>
 	        <b><p class="h4" style="color: #b00"><?=$prod->price;?> TND</p></b>
 	      </div>
 	    </div>
