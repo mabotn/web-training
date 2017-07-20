@@ -7,8 +7,169 @@
 }
 body{
   background: #393944;
-  }
 }
-.ask{
+.ask {
   width: 100%;
+  position: absolute;
+  left: 0px;
+  z-index: -1;
+}
+.jumbotron{
+    padding: 0px;
+    position: relative;
+    background: transparent;
+}
+
+.cover {
+  padding: 0px !important;
+}
+
+#imaage img {
+  margin-top: 25px;
+  height: 125px;
+}
+#name{
+  color: white;
+}
+#userid{
+  color: white;
+}
+.abonne{
+  color: white;
+  background: rgba(0,0,0,0.5) ;
+  padding: 10px;
+  height: 50px;
+  border-radius: 10px 10px 10px 10px;
+}
+#question {
+  background: #FFFFED;
+  margin: 15px;
+  margin-top: 0px;
+
+}
+
+.propos i{
+  color:#C0C0C0;
+}
+
+.propos a{
+  color:#C0C0C0;
+  margin : 10px;
+
+}
+.propos div {
+  margin-top: 12px;
+}
+
+.propos{
+  padding :10px;
+  margin-left:20px;
+  margin-top: 0px;
+  background: white;
+
+}
+#text {
+  width: 100%;
+}
+#box {
+  background-color: #FF6648;
+}
+#demander {
+  background-color: #FF6648;
+  color: white;}
+#button1{
+  height: 38px;
+  width: 190px;
+  color: #FF6648;
+  border-radius : 19px 19px 19px 19px ;
+  border-color: #F2F2F9;
+  border-width:medium;
+  background-color:white;
+
+
+}
+.badge{
+  background-color: white ;
+  color :#FF6648 ;
+  font-size: 15px ;
+}
+.acty{
+  border-bottom-color:#FF6648;
+  border-bottom-width:thick;
+
+}
+.fa fa-share-square-o{
+  color:#FF6648 ;
+}
+.sizy{
+  width:245px ;
+}
+.aide a {
+  color: #FF6648;
+}
+.aide {
+  padding :0px;
+  margin-left:829px;
+  margin-top: 500px;
+  background: white;
+  text-align: center;
+  padding: 16px;
+}
+.aide > a {
+  display: block;
+}
+.owl{
+  padding: 8px;
+  width: 40px;
+  margin: 5px 2px;
+  border-radius: 70%;
+  background:white;
+  margin-top: 5px;
+
+}
+
+.fa {
+  padding: 8px;
+  font-size: 20px;
+  width: 40px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 70%;
+  color: white !important;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-vk {
+  background: #4E6E8E;
+  color: white;
+}
+
+#copy{
+  color: black !important;
+ margin-right: 0px;
+ padding-left: 0px;
+}
+.copyr{
+margin-left: 0px;
 }
