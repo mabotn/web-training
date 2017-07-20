@@ -1,6 +1,7 @@
 body {
 
   background-color: #F5F5F5 !important;
+  padding: 10px;
 }
 .circle {
   width: 25px;
@@ -19,7 +20,8 @@ width: 500px !important ;
 width:133% !important;
 }
 .bordering
-{
+{ border-radius: 5%;
+  border-color: #050404 !important;
   width: 89%;
 background-color: #ffffff;
 
@@ -33,4 +35,9 @@ background-color: #ffffff;
 .left {
 
   margin-right: 80px;
+}
+.ll{
+
+  margin-left: 602px !important;
+  margin-top: -40px !important;
 }
