@@ -2,6 +2,7 @@
 .navbar-default .navbar-nav>li>a {
     color: #ff6648;
 }
+
 #logo{
   height: 20px;
 }
@@ -49,25 +50,27 @@ body{
 }
 
 .propos i{
-  color:#C0C0C0;
+  color:#C0C0C0 !important;
+  margin-right: 0px !important ;
 }
 
 .propos a{
-  color:#C0C0C0;
-  margin : 10px;
+  color:#C0C0C0 !important;
+  margin : 5px !important;
+  padding-left: 0px !important;
 
 }
 .propos div {
-  margin-top: 12px;
+  margin-top: 12px !important;
 }
 
 .propos{
-  padding :10px;
-  margin-left:20px;
-  margin-top: 0px;
-  background: white;
-
+  padding :3px !important;
+  margin-left:0px !important;
+  margin-top: 0px !important;
+  background: white !important;
 }
+
 #text {
   width: 100%;
 }
@@ -99,7 +102,10 @@ body{
 
 }
 .fa fa-share-square-o{
-  color:#FF6648 ;
+  color:#FF6648 !important ;
+  margin-left: 5px !important;
+  margin-right: 0px !important ;
+
 }
 .sizy{
   width:245px ;
@@ -125,6 +131,14 @@ body{
   border-radius: 70%;
   background:white;
   margin-top: 5px;
+
+}
+.bhemaLoun
+{ padding : 0px !important;
+  marging : 0px !important ;
+  font-size: 10px !important ;
+  width : 20px !important ;
+  text-align: left !important;
 
 }
 
@@ -172,4 +186,8 @@ body{
 }
 .copyr{
 margin-left: 0px;
+}
+
+.shit{
+  margin: auto;
 }
