@@ -70,37 +70,57 @@ line-height: 29px;
 	<div class="row">
 <?php
   if(!isset($_SESSION['username']))
-    echo '  <div class="col-md-4 col-xs-6">
+    echo '  <div class="col-md-4 col-xs-6" style="height:300px">
     <div class="container-fluid">
-      <div class="jumbotron" style=" margin-top:20px; margin-bottom:10px; height:360px">
-        <div class="container">
+      <div class="jumbotron" style="height:300px">
+        <div class="container" style="text-align:center">
           <h2 style="color:black">Welcome</h2>
           <p style="color: black; font-size: 11px">Sign in for best experience</p>
           <p><a class="btn btn-primary btn-lg" href="signIn.html" role="button">Sign In Securely</a></p>
-          <p style="color: black; font-size: 11px; margin-top:95px;">New To Amazon?<a href="register.html">Start here</a></p>
+          <p style="color: black; font-size: 11px; margin-top:95px;">New To Amazon?<br><a href="register.html">Start here</a></p>
         </div>
 
-    </div>
-
+      </div>
+      <div style="height: 300px;background-color: white;">
+      <img src="image/sale.png" height="260" width="300" class="fadeOut">
+      </div>
     </div>
   </div>';
 ?>
-	<?php foreach ($category as $cat): ?>
-	  <div class="col-sm-4 col-md-3 text-center">
-	    <div class="thumbnail fadeOut">
-	      <?php echo'<img src="data:image;base64,'.$cat->image.'" alt="'.$cat->image.'">';?>
-	      <div class="caption">
-	        <h3><?= $cat->nom;?></h3>
-	        
-	        <form action="products.php" method="GET">
-	        	<button type="submit" class="btn btn-block b" name="nameOfType" style="width: 100%;margin: auto;background-color: #232F3E;color: white" value="<?= $cat->nom;?>">More ..</button>
-	        </form>
-	      </div>
-	    </div>
-	  </div>
-	<?php endforeach ?>
+<?php 
+$res =  $DB->query($selectcateg);
+?>
+  
+<div class="col-md-4 col-xs-4 col-sm-4" style="background-color: #F6F6F5; border-radius: 1%;height: 580px">
+  <div class="row">
+  <h3 style="text-align: center;border-bottom: 1px solid rgba(224,224,224,.8)">OUR PRODUCTS</h3>
+  <?php $x = 0; foreach ($res as $type) :?>
+    <div class="col-md-4 col-xs-4 col-sm-4" style="margin: 25px">
+      <center>
+      <?php echo '<a href="products.php?nameOfType='.$type->nom.'"><img class="fadeOut" src="data:image;base64,'.$type->image.'" style="border-radius: 100%;background-color:white;padding:3px;" width="120" height="120">';$x+=1;?></center></a>
+      <caption><h3 style="margin-left: 34px;font-size: 18px"><?= $type->nom;?></h3></caption>
+      </center>
+    </div>
+<?php if($x==2)
+echo '</div><div class="row">';?>
+<?php endforeach ?>
+
+  </div>
+  <p style="border-top: 1px solid rgba(224,224,224,.8);color:black;font-size: 12px;text-align: center"><button class="btn btn-default btn-block" style="margin-top: 15px;font-size: 17px">See more</button></p> 
+</div>
+
+<div class="col-md-4 col-xs-4 col-sm-4" style="padding-left: 60px">
+  <div class="row" style="height: 300px;background-color: black; margin-bottom: 5px ">
+    <img src="image/ads1.png" height="300" width="360" class="fadeOut">
+  </div>
+  <div class="row" style="height: 300px;background-color: black;">
+    <img src="image/ads2.png" height="300" width="360" class="fadeOut">
+  </div>
+</div>
+
 	</div>
 </div>
+
 
 <?php require '_footer.html'; ?>
 </body>
