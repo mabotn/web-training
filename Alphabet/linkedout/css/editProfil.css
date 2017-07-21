@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px');
+
+*{font-family: 'Slabo 40px', serif;}
+
+body{
+  margin-left: 10px;
+}
+
+legend {
+  padding:12px 24px;
+  margin-left: -10px;
+}
+
+label {
+    line-height: 20px;
+    font-weight: 500;
+    color: rgba(0,0,0,.55);
+    font-size: 15px;
+    margin: 12px 0 3px;
+}

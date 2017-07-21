@@ -16,4 +16,15 @@ app.controller('ctrl', function($scope) {
   $scope.clear = function() {
     $scope.todoItems = []
   }
+
+  $scope.edit = function(index) {
+
+    $scope.todoItems.splice(index, 1)
+    $scope.todoItems.splice(index,0,$scope.newTask)
+
+  
+    
+   }
+
+
 })
