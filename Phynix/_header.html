@@ -6,6 +6,10 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+
+  <!-- pour l'oeuil des vu -->
 </head>
 <body>
 
@@ -13,6 +17,13 @@
 require 'db.class.php';
 $DB = new DB(); // cosntructeur base de données
 $category =  $DB->query('SELECT * FROM type') ;
+$selectcateg = "SELECT * FROM type LIMIT 4";
+// On prolonge la session
+if (!isset($_SESSION['username'])) {
+  session_start();
+}
+// On teste si la variable de session existe et contient une valeur
+
 ?>
 
 <style type="text/css">
@@ -28,38 +39,104 @@ $category =  $DB->query('SELECT * FROM type') ;
   background-color: #232F3E !important;
   border: none !important;
 }
+select {
+  font-size: 26px;display: inline-block;;z-index: 999;
+  border-radius: 5px 5px 0px 0px;
+  border-bottom: none
+}
+option {
+  background-color: #232F3E;
+  color: white;
+}
+#recherche {
+  border-radius: 0px 0px 0px 10px;
+}
 
+    #signupSubmit{
+      background: #f0c14b;
+      background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+      border-color: #a88734 #9c7e31 #846a29;
+      color: #111;
+      width: 100%;
+      border-style: solid;
+      border-width: 1px;
+      cursor: pointer;
+      display: inline-block;
+      padding: 0;
+      text-align: center;
+      text-decoration: none!important;
+      font-family: "Amazon Ember",Arial,sans-serif;
+      font-size: 13px;
+      vertical-align: middle;
+      box-sizing: border-box;
+      line-height: 19px;
+      border-radius: 3px;
+      text-align: center;
+      white-space: nowrap;
+      font-size: 13px;
+      line-height: 29px;
+
+    }
+
+#signinSubmit{
+  background: #f0c14b;
+  background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+  border-color: #a88734 #9c7e31 #846a29;
+  color: #111;
+  width: 100%;
+  border-style: solid;
+  border-width: 1px;
+  cursor: pointer;
+  display: inline-block;
+  padding: 0;
+  text-align: center;
+  text-decoration: none!important;
+  font-family: "Amazon Ember",Arial,sans-serif;
+  font-size: 13px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  line-height: 19px;
+  border-radius: 3px;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 13px;
+  line-height: 29px;
+
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
 </style>
 
 
-<header style="margin-top: -20px;padding-top: 20px">
+<header style="margin-top: -20px;padding-top: 20px"  id="top">
 
-  <a href="index.php"><img src="logo.png" alt="brand" height="50px" width="200px" style="float: left;margin: 22px 17px 17px 17px;" ></a>
+  <a href="index.php"><img src="logo.png" alt="brand" height="50px" width="200px" style="float: left;margin: 22px 17px 17px 17px;"></a>
   <div class="container main">
       <div class="row">
           <div class="col-xs-8 col-xs-offset-2">
+          <form action="search.php" method="GET">
+          <span>
+            <select name="categ">
+              <option value="">ALL</option>
+              <option value="watch">Watch</option>
+              <option value="mobile">Mobile</option>
+              <option value="fashion">Fashion</option>
+              <option value="laptop">Laptop</a></option>
+            </select>
+          </span>
           <div class="input-group">
-                  <div class="input-group-btn search-panel">
-                      <button type="button" class="btn filtrer dropdown-toggle" data-toggle="dropdown">
-                        <span id="search_concept">Clothing, shoes, jewlery</span> <span class="caret"></span>
-                      </button>
-                      <ul class="dropdown-menu" role="menu">
-                        <li><a href="#contains">Contains</a></li>
-                        <li><a href="#its_equal">It's equal</a></li>
-                        <li><a href="#greather_than">Greather than ></a></li>
-                        <li><a href="#less_than">Less than < </a></li>
-                        <li class="divider"></li>
-                        <li><a href="#all">Anything</a></li>
-                      </ul>
-                  </div>
-                  <input type="hidden" name="search_param" value="all" id="search_param">
-                  <input type="text" class="form-control" name="x" placeholder="Search term...">
-                  <span class="input-group-btn">
-                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
-                  </span>
-              </div>
+                  
+            <input type="hidden" name="search_param" value="all" id="search_param">
+            <input type="text" class="form-control" name="recherche" id="recherche" placeholder="Search term...">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="submit"><span class="glyphicon glyphicon-search"></span></button>
+            </span>
+          </form>
           </div>
-    </div>
+          </div>
+      </div>
   </div>
 
 
@@ -80,12 +157,10 @@ $category =  $DB->query('SELECT * FROM type') ;
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
-          <li class="active"><a href="#">Your Amazon.com <span class="sr-only">(current)</span></a></li>
-
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Today's list <span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
+               
               <li><a href="#">Another action</a></li>
               <li><a href="#">Something else here</a></li>
               <li role="separator" class="divider"></li>
@@ -97,15 +172,29 @@ $category =  $DB->query('SELECT * FROM type') ;
         </ul>
 
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#">Link</a></li>
+          
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><?php if(isset($_SESSION['username'])) echo "Hello, ".strtoupper($_SESSION['username']); else echo "WELCOME TO Amazon";?><span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
+                <?php 
+                if(!isset($_SESSION['username']))
+                  echo '<li>
+                  <a href="register.html"><button id="signupSubmit" type="submit" class="btn btn-info btn-block" value="ajouter" > Create your Amazon account</button></a>
+                </li>';
+                ?> 
+                <?php 
+                if(!isset($_SESSION['username']))
+                  echo '<li><a href="signIn.html"><button id="signinSubmit" type="submit" class="btn btn-success btn-block" value="verifier">Sign in</button></a></li>';
+                ?> 
+          
+                <?php 
+                if(isset($_SESSION['username']))
+                  {
+                    echo '<li><a href="logout.php">Log Out</a></li>' ;
+                  }
+                ?>
               <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
+              <li><a href="#">Cart</a></li>
             </ul>
           </li>
         </ul>
@@ -114,3 +203,9 @@ $category =  $DB->query('SELECT * FROM type') ;
   </nav>
 </header>
 
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>

@@ -31,7 +31,7 @@ body {
 }
 
 .cat{
-	padding-top: 100px
+	padding-top: 50px
 }
 
 .fadeOut {
@@ -41,6 +41,9 @@ body {
 .fadeOut:hover {
 	transform: scale(1.1);
 }
+
+
+
 
 
 

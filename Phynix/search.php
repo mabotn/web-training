@@ -4,7 +4,8 @@ require '_header.html';
 	if(isset($_GET['recherche']))
 	{
 		$rechercher = $_GET['recherche'];
-		$result = $DB->query("SELECT * FROM produits WHERE name like '%$rechercher%'");
+		$cat = $_GET['categ'];
+		$result = $DB->query("SELECT * FROM produits WHERE name like '%$rechercher%' and categorie like '%$cat%'");
 	}
 	
 	if(sizeof($result) < 1)
@@ -19,7 +20,7 @@ require '_header.html';
 	<?php foreach ($result as $prodSearch): ?>
 	  <div class="col-sm-4 col-md-3 text-center">
 	    <div class="thumbnail fadeOut">
-	      <?php echo'<img src="data:image;base64,'.$prodSearch->image.'" alt="'.$prodSearch->image.'">';?>
+	      <?php echo'<img src="data:image;base64,'.$prodSearch->image.'" style="height: 250px" alt="'.$prodSearch->image.'">';?>
 	      <div class="caption">
 	        <h3><?= $prodSearch->name;?></h3>
 	        <a href="#"><p><b><?= $prodSearch->description ;?></b></p></a>

@@ -70,7 +70,7 @@ line-height: 29px;
 	<div class="row">
 <?php
   if(!isset($_SESSION['username']))
-    echo '  <div class="col-md-3 col-xs-6">
+    echo '  <div class="col-md-4 col-xs-6">
     <div class="container-fluid">
       <div class="jumbotron" style=" margin-top:20px; margin-bottom:10px; height:360px">
         <div class="container">

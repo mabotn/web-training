@@ -63,13 +63,15 @@ hr.styler{
   background: #232F3E;
   height: 300px;
 }
+
 </style>
 <footer>
   <div class="first">
+    <a href="#top">
     <div class="container first">
       <p style="font-size:14px;text-align: center;margin-top: 20px">Back to top</p>
     </div>
-
+    </a>
   </div>
   <div class="last">
     <div class="container">
@@ -102,16 +104,7 @@ hr.styler{
  <hr class="styler">
 <div class="container lang">
   <div class="row">
-    <div class="col-md-4 col-xs-4 col-sm-3">
-      <img src="logo.png" alt="bottomLogo" width="110px" height="50px" style="margin-left:25vw; margin-top:20px">
-    </div>
-    <div class="col-md-3 col-xs-4 col-sm-3" style="width: 10vw">
-      
-    </div>
-    <div class="col-md-4 col-xs-4 col-sm-3">
-        <button class="bottom-but"><span class="glyphicon glyphicon-globe">English</span></button>
-        <button class="bottom-but"><span class="glyphicon glyphicon-blackboard">United States</span></button>
-    </div>
+      <center><a href="index.php"><img src="logo.png" alt="bottomLogo" width="110px" height="50px" style="margin-top:20px"></a></center>    
   </div>
 
 </div>
@@ -146,6 +139,16 @@ hr.styler{
       </div>
     </div>
 </footer>
+<script type="text/javascript">
+  $('a[href^="#top"]').click(function(){
+            var the_id = $(this).attr("href");
+
+            $('html, body').animate({
+                scrollTop:$(the_id).offset().top
+            }, 1000);
+            return false;
+        });
+</script>
 </body>
 </html>
 <!-- footer ends -->
