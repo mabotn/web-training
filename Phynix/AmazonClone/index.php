@@ -5,7 +5,7 @@ session_start();
 if(empty($_SESSION['username']))
 {
   // Si inexistante ou nulle, on redirige vers le formulaire de login
-  header('Location:signIn.php');
+  header('Location:index.php');
   exit();
 }
 ?>
