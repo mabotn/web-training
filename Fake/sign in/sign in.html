@@ -42,18 +42,18 @@
       </CENTER>
       <h2 class="strikeThrough"><span>or</span></h2>
       <HR ALIGN="center">
-                  <form class="form-signin">
+                  <form method="post", action="sign.php" class="form-signin">
                   <span id="reauth-email" class="reauth-email"></span>
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <input type="text"  class="form-control" placeholder="Full Name" required>
-                  <input type="text"  class="form-control" placeholder="User Name" required>
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <input type="email"name="mail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+                  <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                  <input type="text" name="id0" class="form-control" placeholder="User Name" required>
+                  <input type="password" name="pass"id="inputPassword" class="form-control" placeholder="Password" required>
       <label for="">
     Birth Date</label>
 <div class="row">
 
     <div class="col-xs-4 col-md-4">
-        <select class="form-control">
+        <select name="day" class="form-control">
             <option value="Day">Day</option>
 
 <option value="">Day</option>
@@ -92,7 +92,7 @@
         </select>
     </div>
     <div class="col-xs-4 col-md-4">
-        <select class="form-control">
+        <select name="month" class="form-control">
             <option value="Month">Month</option>
             <option value="1">January</option>
 <option value="2">February</option>
@@ -109,7 +109,7 @@
         </select>
     </div>
     <div class="col-xs-4 col-md-4">
-        <select class="form-control">
+        <select name="year" class="form-control">
             <option value="Year">Year</option>
 <option value="2012">2012</option>
 <option value="2011">2011</option>
