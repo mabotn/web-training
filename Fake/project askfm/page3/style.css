@@ -103,6 +103,7 @@ body{
   color :#FF6648 ;
   font-size: 15px ;
 }
+
 .acty{
   border-bottom-color:#FF6648;
   border-bottom-width:thick;
@@ -149,7 +150,7 @@ body{
 
 }
 
-.fa {
+.social .fa {
   padding: 8px;
   font-size: 20px;
   width: 40px;
