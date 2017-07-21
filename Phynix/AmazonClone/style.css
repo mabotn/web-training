@@ -1,0 +1,110 @@
+body{
+  background: #FAFAFA;
+}
+header{
+  height: 160px;
+  background-color: #232F3E;
+}
+.outer{
+  height: 60px;
+  background: #FAFAFA;
+}
+.btn-primary{
+background: #f0c14b;
+background: linear-gradient(to bottom,#f7dfa5,#f0c14b);
+border-color: #a88734 #9c7e31 #846a29;
+color: #111;
+width: 100%;
+border-style: solid;
+border-width: 1px;
+cursor: pointer;
+display: inline-block;
+padding: 0;
+text-align: center;
+text-decoration: none!important;
+font-family: "Amazon Ember",Arial,sans-serif;
+font-size: 13px;
+vertical-align: middle;
+box-sizing: border-box;
+line-height: 19px;
+border-radius: 3px;
+text-align: center;
+white-space: nowrap;
+font-size: 13px;
+line-height: 29px;
+margin-bottom: 44px!important;
+margin-top: 26px!important;
+
+}
+.inner{
+  height: 100px;
+  background-color: #232F3E;
+}
+.navbar-inverse{
+  background-color: #232F3E !important;
+  border: none !important;
+}
+.main{
+  margin-top: 20px;
+  width: 1000px !important;
+  margin-left: 150px !important;
+}
+h4{
+
+  color: #FAFAFA;
+}
+.container{
+
+}
+h5{
+  color: #FAFAFA;
+}
+h6{
+  color: #FAFAFA;
+}
+.service{
+  background-color: #131A22;
+
+}
+hr{
+  color: #232F3E;
+}
+.filtrer{
+  background-color: #DADADA;
+}
+.btn-default{
+  background-color: #F3A847!important;
+}
+.first{
+  background: #485769;
+  height: 60px;
+  position: relative;
+  text-align:center;
+
+}
+p{
+  color:#FAFAFA;
+  font-size: 13px;
+}
+.bottom-but{
+
+  color: #FAFAFA;
+  white-space: nowrap;
+  display: inline-block!important;
+border: 1px solid #848688;
+border-radius: 3px;
+padding: 6px 18px 6px 8px;
+font-size: 14px;
+margin-right: 4px;
+background-color: #232F3E;
+margin-top: 20px;
+box-sizing: border-box;
+text-align: center;
+}
+hr.styler{
+  border-top: 1px solid #8c8b8b;
+}
+.last{
+  background: #232F3E;
+  height: 300px;
+}
