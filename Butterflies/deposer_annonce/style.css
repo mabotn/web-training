@@ -1,6 +1,7 @@
 body {
 
   background-color: #F5F5F5 !important;
+  padding: 10px;
 }
 .circle {
   width: 25px;
@@ -11,4 +12,32 @@ body {
   line-height: -20px;
   text-align: center;
   background: #1976d2;
+}
+.dropdown{
+width: 500px !important ;
+}
+.btn-large {
+width:133% !important;
+}
+.bordering
+{ border-radius: 5%;
+  border-color: #050404 !important;
+  width: 89%;
+background-color: #ffffff;
+
+}
+.p{
+
+  color: #979797;
+}
+.btn-default.btn-on.active{background-color: #5BB75B;color: white;}
+
+.left {
+
+  margin-right: 80px;
+}
+.ll{
+
+  margin-left: 602px !important;
+  margin-top: -40px !important;
 }

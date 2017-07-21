@@ -1,6 +1,21 @@
 <?php 
 require '_header.html';
 ?>
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css">
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+<style type="text/css">
+	.mdl-textfield{
+		margin-left: 20px
+	}
+	table {
+		right: 0;
+		left: 0;
+		margin: auto;
+		margin-top: -180px;
+		margin-bottom: 50px
+	}
+</style>
 <form action="#upload" method="post" enctype="multipart/form-data">
 <br><br><br><br><br><br><br>
 	
@@ -8,14 +23,17 @@ require '_header.html';
 	<table>
 		<tr>
 			<th>Label</th>
-			<th>Value</th>
+			<th class="mdl-textfield">Value</th>
 		</tr>
 		<tr>
 			<td>
 				<label for="name">Name</label>
 			</td>
 			<td>
-				<input type="text" name="name"><br>
+				<div class="mdl-textfield mdl-js-textfield">
+				  <input class="mdl-textfield__input" type="text" name="name">
+				  <label class="mdl-textfield__label" for="name">name...</label>
+				</div>
 			</td>
 		</tr>
 		<tr>
@@ -23,7 +41,10 @@ require '_header.html';
 				<label for="description">Description</label>
 			</td>
 			<td>
-				<input type="text" name="description"><br>
+				<div class="mdl-textfield mdl-js-textfield">
+				  <input class="mdl-textfield__input" type="text" name="description">
+				  <label class="mdl-textfield__label" for="description">Description...</label>
+				</div>
 			</td>
 		</tr>
 		<tr>
@@ -31,7 +52,10 @@ require '_header.html';
 				<label for="categorie">Categorie</label>
 			</td>
 			<td>
-				<input type="text" name="categorie"><br>
+				<div class="mdl-textfield mdl-js-textfield">
+				  <input class="mdl-textfield__input" type="text" name="categorie">
+				  <label class="mdl-textfield__label" for="categorie">Categorie...</label>
+				</div>
 			</td>
 		</tr>
 		<tr>
@@ -39,7 +63,10 @@ require '_header.html';
 				<label for="price">Price</label>
 			</td>
 			<td>
-				<input type="text" name="price"><br>
+				<div class="mdl-textfield mdl-js-textfield">
+				  <input class="mdl-textfield__input" type="text" name="price">
+				  <label class="mdl-textfield__label" for="price">Price...</label>
+				</div>
 			</td>
 		</tr>
 		<tr>
@@ -47,7 +74,10 @@ require '_header.html';
 				<label for="quantity">Quantity</label>
 			</td>
 			<td>
-				<input type="text" name="quantity"><br>
+				<div class="mdl-textfield mdl-js-textfield">
+				  <input class="mdl-textfield__input" type="text" name="quantity">
+				  <label class="mdl-textfield__label" for="quantity">Quantity...</label>
+				</div>
 			</td>
 		</tr>
 		<tr>
@@ -55,16 +85,16 @@ require '_header.html';
 				<label for="image">Image</label>
 			</td>
 			<td>
-				<input type="file" name="image"><br>
+				<div class="mdl-textfield mdl-js-textfield">
+				  <input class="mdl-textfield__input" type="file" name="image">
+				  <label class="mdl-textfield__label" for="image">Image...</label>
+				</div>
 			</td>
 		</tr>
-
+		<tr><td></td><td><button type="submit" name="sumit" value="UPLOAD" class="btn btn-default btn-block">UPLOAD</button></td></tr>
 	</table>
 
-	<button type="submit" name="sumit" value="UPLOAD">UPLOAD</button>
-	<button type="submit" name="sumit3" value="Voir Image">Cacher les images</button>
-	<button type="submit" name="sumit2" value="Voir Image">Voir Image</button>
-
+	
 </form>
 
 <div id="upload">

@@ -54,9 +54,11 @@
 }
 .list {
 position: absolute;
-margin-left:
-
-
+margin-left:270px;
+margin-top: 20px;
+}
+.fa-globe{
+  color:#FF643C;
 
 }
 #line{

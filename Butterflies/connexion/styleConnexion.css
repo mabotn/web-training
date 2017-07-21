@@ -1,0 +1,27 @@
+body{
+    background: url(http://mymaplist.com/img/parallax/back.png);
+	  background-color: #444;
+    background: url(http://mymaplist.com/img/parallax/pinlayer2.png),url(http://mymaplist.com/img/parallax/pinlayer1.png),url(http://mymaplist.com/img/parallax/back.png);
+}
+
+.vertical-offset-100{
+    padding-top:100px;
+}
+
+.panel-heading{
+  text-align: center !important;
+  font-weight: bold !important;
+}
+
+span .input-group-addon{
+  width: 20px;
+}
+
+.login-input{
+  padding: 10px;
+
+}
+
+.my-icon{
+  width: 15px;
+}
