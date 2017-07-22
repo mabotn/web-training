@@ -33,10 +33,10 @@
 
         <div class="panel panel-default">
     <div class="fr">
-                  <form class="form-signin">
+                  <form class="form-signin" method="post" action="signIn.php">
                   <span id="reauth-email" class="reauth-email"></span>
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+                  <input type="email" id="inputEmail" class="form-control" name="mail" placeholder="Email address" required autofocus>
+                  <input type="password" id="inputPassword" class="form-control" name="pass" placeholder="Password" required>
 
                   <div id="remember" class="checkbox">
                       <label>
@@ -47,7 +47,7 @@
                   <a href="#" class="forgot-password">
                 Forgot the password?
             </a>
-                  <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Login</button>
+                  <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit" name="submit">Login</button>
               </form><!-- /form -->
             <h2 class="strikeThrough"><span>Login with</span></h2>
             <HR ALIGN="center">
