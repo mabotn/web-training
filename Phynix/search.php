@@ -32,5 +32,6 @@ require '_header.html';
 	</div>
 </div>
 
-</body>
-</html>
+<?php 
+require '_footer.html';
+?>
