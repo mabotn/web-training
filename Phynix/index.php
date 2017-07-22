@@ -86,6 +86,22 @@ line-height: 29px;
       </div>
     </div>
   </div>';
+  else
+    echo '  <div class="col-md-4 col-xs-6" style="height:300px">
+    <div class="container-fluid">
+      <div class="jumbotron" style="height:300px">
+        <div class="container" style="text-align:center">
+          <h2 style="color:black">Welcome <br><br>'.strtoupper($_SESSION['username']).'</h2>
+          <br>
+          <p><a class="btn btn-primary btn-lg" href="logout.php" role="button">LOG OUT</a></p>
+        </div>
+
+      </div>
+      <div style="height: 300px;background-color: white;">
+      <img src="image/sale.png" height="260" width="300" class="fadeOut">
+      </div>
+    </div>
+  </div>';
 ?>
 <?php 
 $res =  $DB->query($selectcateg);
@@ -111,10 +127,10 @@ echo '</div><div class="row">';?>
 
 <div class="col-md-4 col-xs-4 col-sm-4" style="padding-left: 60px">
   <div class="row" style="height: 300px;background-color: black; margin-bottom: 5px ">
-    <img src="image/ads1.png" height="300" width="360" class="fadeOut">
+    <a href="assistant.php"><img src="image/ads1.png" height="300" width="360" class="fadeOut"></a>
   </div>
-  <div class="row" style="height: 300px;background-color: black;">
-    <img src="image/ads2.png" height="300" width="360" class="fadeOut">
+  <div class="row" style="height: 300px;background-color: white;">
+    <img src="image/ads2.png" height="250" width="360" class="fadeOut">
   </div>
 </div>
 
@@ -122,6 +138,9 @@ echo '</div><div class="row">';?>
 </div>
 
 
+
+
+    
 <?php require '_footer.html'; ?>
 </body>
 </html>
