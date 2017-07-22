@@ -4,10 +4,10 @@
 
     $db = mysqli_connect('35.160.127.179','alphabet','Kudo5000','alphabet');
 
+if(isset($_POST['submit'])){
     $name = $_POST['name'];
     $mail = $_POST['mail'] ;
     $password = $_POST['password'];
-if(isset($_POST['submit'])){
     $res = "INSERT INTO users VALUES (NULL,'$name','$mail','$password')";
     mysqli_query($db,$res);
 }
