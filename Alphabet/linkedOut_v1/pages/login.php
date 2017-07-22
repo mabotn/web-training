@@ -1,13 +1,23 @@
-<?php 
+<?php
 
     include('head.php');
-?>  
+
+    $db = mysqli_connect('35.160.127.179','alphabet','Kudo5000','alphabet');
+    $name = $_POST['name'];
+    $mail = $_POST['mail'] ;
+    $password = $_POST['password'];
+
+    $res = "INSERT INTO users VALUES (NULL,'$name','$mail','$password')";
+    mysqli_query($db,$res);
+
+?>
 <!-- iCheck -->
   <link rel="stylesheet" href="../plugins/iCheck/square/blue.css">
  </head>
 
 
 <body class="hold-transition login-page">
+
 <div class="login-box">
   <div class="login-logo">
     <a href="index.php"><b>Linked</b>OUT</a>
@@ -18,11 +28,11 @@
 
     <form action="index.php" method="post">
       <div class="form-group has-feedback">
-        <input type="email" class="form-control" placeholder="Email">
+        <input type="email" name="mail" class="form-control" placeholder="Email">
         <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
       </div>
       <div class="form-group has-feedback">
-        <input type="password" class="form-control" placeholder="Password">
+        <input type="password" name="password" class="form-control" placeholder="Password">
         <span class="glyphicon glyphicon-lock form-control-feedback"></span>
       </div>
       <div class="row">
