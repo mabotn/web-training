@@ -17,6 +17,7 @@
 require 'db.class.php';
 $DB = new DB(); // cosntructeur base de données
 $category =  $DB->query('SELECT * FROM type') ;
+$selectcateg = "SELECT * FROM type LIMIT 4";
 // On prolonge la session
 if (!isset($_SESSION['username'])) {
   session_start();

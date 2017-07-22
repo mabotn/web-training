@@ -1,10 +1,21 @@
-<?php 
+<?php
 
     include('head.php');
     include('nav.php');
     include('aside.php');
 
-?>
+
+  $db = mysqli_connect('35.160.127.179','alphabet','Kudo5000','alphabet');
+
+  $mail = $_POST['mail'] ;
+  $password = $_POST['password'];
+
+  $result = $db->query("SELECT * FROM users where mail='$mail' ");
+
+$row =$result->fetch_array();
+if( $password == $row['password']) { ?>
+
+
 
 
 
@@ -35,7 +46,7 @@
 
 
 
-    
+
 
       <div class="row">
         <div class="col-md-6">
@@ -227,11 +238,11 @@
 
 
 
-  
 
 
-<?php 
+
+<?php
 
     include('footer.php');
-
+}
 ?>
