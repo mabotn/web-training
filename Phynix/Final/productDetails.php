@@ -1,4 +1,6 @@
 <?php
+session_start();
+include "panierController.php";
 require '_header.html';
 
 $idProduit = $_GET['id'];
@@ -110,8 +112,9 @@ h1 { font-size: 1.5em; margin: 10px; }
         <div class="price">
          <span>Price:</span><?=$prod->price;?>TND &nbsp&nbsp<s><?=$prod->price + 120;?> TND</s>
        </div><br>
-        <button style="background: linear-gradient(to bottom,#f5d78e,#eeb933);border-radius: 2px;" type="button" name="button" id="submit"><i class="fa fa-shopping-cart"></i> Add to card</button>
-      </div>
+        <form action="panierController.php" method="GET">
+        <button style="background: linear-gradient(to bottom,#f5d78e,#eeb933);border-radius: 2px;" type="button" name="addCart" id="submit" value="addCart"><i class="fa fa-shopping-cart"></i> <a href="http://localhost/AmazonClone/productDetails.php?id=<?= $idProduit?>&click=1">Add to cart</a> </button>
+      </form>      </div>
     </div>
 <?php endforeach ?>
     <hr><!-- hr -->
