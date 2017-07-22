@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -91,24 +92,19 @@
 <div class="row">
 
   <div class="col-md-8 text-align:center" style="background-color:white; margin-left:16px">
-    <div class="text-align:center " style="text-align:center">
-      <ul class="nav nav-pills" role="tablist">
-    <li role="presentation" class="acty"><a href="#" class="sizy" style="color:black"><span class="badge">42</span> <br>Réponses </a></li>
-    <li role="presentation"><a href="#" class="sizy" style="color :grey"><span class="badge" >3</span> <br> J'aime</a></li>
-    <li role="presentation"><a href="#" class="sizy" style="color:grey"><span class="badge" >3</span> <br> Cadeaux</a></li>
-  </ul>
+    <div class="main__header" style="text-align:center ">
+      Questions
     </div>
-  <div style="background-color:#F2F2F9; color:#FF6648; height:25px; padding-bottum:120px; text-align:center ; text-size:220px">
-  <strong>Wafa Klabi</strong> | Dernières réponses
-</div>
-  <h4 style="text-align:center; margin-top:40px"><strong>Tu n'a encore répondu à aucune question</strong></h4>
-  <p style="color:grey ; text-align:center ; margin:20px; font-size :120%"> Tu peux partager ton profile pour recevoir des questions !</p>
-  <div style="padding-left:250px; padding-right:50px;; margin:20p">
-    <button id="buttonbhim"><i class="fa fa-share-square-o bhehmaH" aria-hidden="true"></i>Partager ton profil</button>
+    <div class="quest">
+      <p>USER</p>
+      <p>hello how are you</p>
+      <div class="aime">
+        <i class="fa fa-heart fa-3" aria-hidden="true" ></i> <i class="fa fa-comment fa-3" aria-hidden="true" ></i>
+
+      </div>
+    </div>
 
 
-  </div>
-    <p style="color:#FF6648 ;text-align:center; margin-top:10px">Comment puis-je recevoir plus de question ?</p>
 
 </div>
 <div class="col-md-3 ">
