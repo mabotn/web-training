@@ -59,7 +59,7 @@ a:hover{
 <div class="jumbotron">
     <div class="container aa text-center">
         <img src="https://images-eu.ssl-images-amazon.com/images/G/08/associates/BIT/1button/1bav2logo._CB314819233_.png" class="img-responsive"><br>
-        <p style="font-size: 18px">Achetez plus malin en ligne</p>
+        <p style="font-size: 18px;color: black">Achetez plus malin en ligne</p>
 
         <div class="dropdown">
 		  <button class="a-button-inner dropdown-toggle"  id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class=""><img src="http://icons.iconarchive.com/icons/marcus-roberto/google-play/256/Google-Chrome-icon.png" height="30"> <a href="https://chrome.google.com/webstore/detail/amazon-assistant-for-chro/pbjikboenpfhbbejgkoklgkhjpfogcam" style="color: black">Installer maintenant pour Google Chrome</a></span><span class="caret"></span></button>
