@@ -23,7 +23,7 @@ require '_header.html';
 	      <?php echo'<img src="data:image;base64,'.$prodSearch->image.'" style="height: 250px" alt="'.$prodSearch->image.'">';?>
 	      <div class="caption">
 	        <h3><?= $prodSearch->name;?></h3>
-	        <a href="#"><p><b><?= $prodSearch->description ;?></b></p></a>
+	        <a href="productDetails.php?id=<?= $prodSearch->id;?>&?nameOfType=<?= $prodSearch->categorie;?>"><b><?= $prodSearch->description ;?></b></a>
 	        <p><a href="#" class="btn btn-block b" role="button" style="width: 100%;margin: auto;background-color: #232F3E;color: white">More ..</a></p>
 	      </div>
 	    </div>
@@ -32,5 +32,6 @@ require '_header.html';
 	</div>
 </div>
 
-</body>
-</html>
+<?php 
+require '_footer.html';
+?>

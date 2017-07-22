@@ -16,13 +16,13 @@ h1 { font-size: 1.5em; margin: 10px; }
 
 /****** Style Star Rating Widget *****/
 
-.rating {
+.rating { 
   border: none;
   float: left;
 }
 
-.rating > input { display: none; }
-.rating > label:before {
+.rating > input { display: none; } 
+.rating > label:before { 
   margin: 5px;
   font-size: 1.25em;
   font-family: FontAwesome;
@@ -30,14 +30,14 @@ h1 { font-size: 1.5em; margin: 10px; }
   content: "\f005";
 }
 
-.rating > .half:before {
+.rating > .half:before { 
   content: "\f089";
   position: absolute;
 }
 
-.rating > label {
-  color: #ddd;
- float: right;
+.rating > label { 
+  color: #ddd; 
+ float: right; 
 }
 
 /***** CSS Magic to Highlight Stars on Hover *****/
@@ -49,7 +49,7 @@ h1 { font-size: 1.5em; margin: 10px; }
 .rating > input:checked + label:hover, /* hover current star when changing rating */
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label, /* lighten current selection */
-.rating > input:checked ~ label:hover ~ label { color: #FFED85;  }
+.rating > input:checked ~ label:hover ~ label { color: #FFED85;  } 
 
 
 .fadeOut:hover {
@@ -68,24 +68,24 @@ h1 { font-size: 1.5em; margin: 10px; }
         <div class="thumbnail" style="margin-top: 20px;">
         <?php echo'<img alt="100%x180" data-src="holder.js/100%x180" style="width: 100%; display: block;"
               src="data:image;base64,'.$prod->image.'" data-holder-rendered="true" id="zoom1" onmousemove="zoomIn(event)" onmouseout="zoomOut()">'; ?>
-
+              
         </div>
       </div>
-      <div id="preview" onmousemove="zoomIn(event)" style="position: absolute;z-index: 999;right: 0 "></div>
+      <div id="preview" onmousemove="zoomIn(event)" style="position: absolute;z-index: 999;right: 0 "></div> 
       <div class="col-md-7">
         <h2><?= $prod->name ;?></h2>
         <div class="details row">
           <fieldset class="rating">
               <input type="radio" id="star5" name="rating" value="5" class="star" rat="5" /><label class = "full" for="star5" title="Awesome - 5 stars"></label>
-
+              
               <input type="radio" id="star4" name="rating" class="star" rat="4" /><label class = "full" for="star4" title="Pretty good - 4 stars"></label>
-
+              
               <input type="radio" id="star3" name="rating" class="star" rat="3" /><label class = "full" for="star3" title="Meh - 3 stars"></label>
-
+              
               <input type="radio" id="star2" name="rating" class="star" rat="2" /><label class = "full" for="star2" title="Kinda bad - 2 stars"></label>
-
+              
               <input type="radio" id="star1" name="rating" class="star" rat="1" /><label class = "full" for="star1" title="Sucks big time - 1 star"></label>
-
+              
           </fieldset>
           Rate : <?php
           if ($prod->total != 0)
@@ -93,8 +93,8 @@ h1 { font-size: 1.5em; margin: 10px; }
               echo number_format($prod->rate/$prod->total,1,',','');
             }
           else
-            //echo "0";
-          //echo '<p style="font-size:10px; color:rgba(0,0,0,.7);">'.$prod->total.' Voters';
+            echo "0";
+          echo '<p style="font-size:10px; color:rgba(0,0,0,.7);">'.$prod->total.' Voters';
           ?>
           <div class="col-md-2">
             <i class="fa fa-eye" aria-hidden="true"><?= $prod->vu?></i>
@@ -104,7 +104,7 @@ h1 { font-size: 1.5em; margin: 10px; }
         <div class="desc">
           <?= $prod->description ;?>
           <br>
-
+          
         </div>
         <br>
         <div class="price">
@@ -132,12 +132,12 @@ h1 { font-size: 1.5em; margin: 10px; }
   transform: scale(1.5);
   background-color: white;
   visibility: hidden;
-  border-radius: 30px 30px 30px 30px;
+  border-radius: 30px 30px 30px 30px; 
 }
 #samples{
   text-align: center;
 }
-#samples img {
+#samples img {  
   margin: 10px;
   display: block;
    border: 2px solid #6A6462;
@@ -182,7 +182,7 @@ function zoomOut() {
 </script>
 
 <!-- search for items in the same categorie -->
-<?php
+<?php 
 $sql = "SELECT * FROM produits WHERE categorie like '%$produitsCategorie%' ORDER BY vu desc LIMIT 10";
 $result = $DB->query($sql);
 ?>
@@ -194,7 +194,7 @@ $result = $DB->query($sql);
           <div class="item active">
 
           </div>
-
+          
           <?php foreach ($result as $prodC): ?>
           <div class="item">
             <div style="width: 10vw;height: 10vh"></div>
