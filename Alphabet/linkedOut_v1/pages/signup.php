@@ -1,6 +1,16 @@
 <?php
 
     include('head.php');
+
+    $db = mysqli_connect('35.160.127.179','alphabet','Kudo5000','alphabet');
+
+    $name = $_POST['name'];
+    $mail = $_POST['mail'] ;
+    $password = $_POST['password'];
+if(isset($_POST['submit'])){
+    $res = "INSERT INTO users VALUES (NULL,'$name','$mail','$password')";
+    mysqli_query($db,$res);
+}
 ?>
 <!-- iCheck -->
   <link rel="stylesheet" href="../plugins/iCheck/square/blue.css">
@@ -43,7 +53,7 @@
         </div>
         <!-- /.col -->
         <div class="col-xs-4">
-          <button type="submit" class="btn btn-primary btn-block btn-flat">Register</button>
+          <button type="submit" name="submit" class="btn btn-primary btn-block btn-flat">Register</button>
         </div>
         <!-- /.col -->
       </div>
