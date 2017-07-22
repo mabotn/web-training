@@ -13,7 +13,7 @@ if($db && isset($_POST['submit']))
     $id = $row['id'];
     $_SESSION['signed-in'] = true;
     $_SESSION['id'] = $id ;
-    header('location: ../page3/index.html');
+    header('location: ../page3/index.php');
   }
 }
 

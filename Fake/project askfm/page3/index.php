@@ -1,8 +1,13 @@
+<?php
+  session_start();
+    $db = mysqli_connect('35.160.127.179','fake','true7102','fake');
 
+  $result = $db->query("SELECT id,quest FROM questions");
+    ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>Profil</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
@@ -35,6 +40,7 @@
         <li id="notifications"><a href="#">Notifications</a></li>
         <li ><a href="#"> <span  class="fa fa-cog "></span> </a></li>
         <li ><a href="#"><span  class="fa fa-plus-square"></span> </a></li>
+        <li ><a href="#"><?php echo $_SESSION['id']; ?></a></li>
       </ul>
     </div>
   </div>
@@ -55,11 +61,14 @@
 </div>
 <div class="row">
   <div id="question" class="col-md-8" style="margin-left:15px">
-    <h3>Poser une question à @wafaklabi :</h3>
-    <textarea id="text" name="name" placeholder="Quoi, quand, pourquoi..pose une question" ></textarea>
+    <form class="" action="ajoutquest.php" method="post">
+      <h3>Poser une question à @wafaklabi :</h3>
+      <textarea id="text" name="ques" placeholder="Quoi, quand, pourquoi..pose une question" >  </textarea>
 
-    <label><input type="checkbox" id="box" checked="checked"> Demander anonymement</label>
-    <button id="demander" class="btn pull-right" style="margin-bottom: 18px ; margin-top:5px">Demander</button>
+      <label><input type="checkbox" id="box" checked="checked"> Demander anonymement</label>
+      <button id="demander" class="btn pull-right" style="margin-bottom: 18px ; margin-top:5px" type="submit" name="submit">Demander</button>
+    </form>
+
   </div>
   <!--......................................-->
   <div class="col-md-3 propos shit">
@@ -95,14 +104,11 @@
     <div class="main__header" style="text-align:center ">
       Questions
     </div>
-    <div class="quest">
-      <p>USER</p>
-      <p>hello how are you</p>
-      <div class="aime">
-        <i class="fa fa-heart fa-3" aria-hidden="true" ></i> <i class="fa fa-comment fa-3" aria-hidden="true" ></i>
-
-      </div>
-    </div>
+    <?php
+    while($row = $result->fetch_array()) {
+    echo '<div class="quest"><h1>'. $row["id"]. '</h1><br><p>' . $row["quest"].'</p><br><br><div class="aime"><i class="fa fa-heart fa-3" aria-hidden="true" ></i> <i class="fa fa-comment fa-3" aria-hidden="true" ></i></div></div>' ;
+          }
+    ?>
 
 
 
