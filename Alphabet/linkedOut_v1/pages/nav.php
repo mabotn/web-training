@@ -1,3 +1,4 @@
+<a href="index.php" class="logo">
 
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
@@ -5,7 +6,6 @@
 
   <header class="main-header">
     <!-- Logo -->
-    <a href="index.php" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
       <span class="logo-mini"><b>L</b>OUT</span>
       <!-- logo for regular state and mobile devices -->
@@ -20,7 +20,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      
+
 
 
           <div class="col-md-6">
@@ -39,13 +39,14 @@
 
 
       <div class="navbar-custom-menu">
-        
+
         <ul class="nav navbar-nav">
 
 
 
 
-          
+
+
 
 
           <!-- Messages: style can be found in dropdown.less-->
@@ -62,7 +63,7 @@
                   <li><!-- start message -->
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                        <img src="../dist/img/anis.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Support Team
@@ -75,7 +76,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="../dist/img/ali.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Design Team
@@ -87,7 +88,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="../dist/img/moez.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Developers
@@ -99,7 +100,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="../dist/img/ghada.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         skills Department
@@ -111,7 +112,7 @@
                   <li>
                     <a href="#">
                       <div class="pull-left">
-                        <img src="../dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                        <img src="../dist/img/ali.jpg" class="img-circle" alt="User Image">
                       </div>
                       <h4>
                         Reviewers
@@ -167,21 +168,21 @@
               <li class="footer"><a href="#">View all</a></li>
             </ul>
           </li>
-          
+
 
           <!-- User Account: style can be found in dropdown.less -->
           <li class="dropdown user user-menu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="../dist/img/user1-128x128.jpg" class="user-image" alt="User Image">
-              <span class="hidden-xs">Moetaz Ben Charrada</span>
+              <img src="../dist/img/anis.jpg" class="user-image" alt="User Image">
+              <span class="hidden-xs">Anis Aroui</span>
             </a>
             <ul class="dropdown-menu">
               <!-- User image -->
               <li class="user-header">
-                <img src="../dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+                <img src="../dist/img/anis.jpg" class="img-circle" alt="User Image">
 
                 <p>
-                  Moetaz Ben Charrada - Web Developer
+                  Anis Aroui - Web Developer
                   <small>Member since Nov. 2012</small>
                 </p>
               </li>
@@ -211,7 +212,7 @@
               </li>
             </ul>
           </li>
-     
+
         </ul>
       </div>
     </nav>

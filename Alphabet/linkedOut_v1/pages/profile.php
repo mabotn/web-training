@@ -1,4 +1,4 @@
-<?php 
+<?php
 
     include('head.php');
     include('nav.php');
@@ -30,9 +30,9 @@
           <!-- Profile Image -->
           <div class="box box-primary">
             <div class="box-body box-profile">
-              <img class="profile-user-img img-responsive img-circle" src="../dist/img/user4-128x128.jpg" alt="User profile picture">
+              <img class="profile-user-img img-responsive img-circle" src="../dist/img/anis.jpg" alt="User profile picture">
 
-              <h3 class="profile-username text-center">Nina Mcintire</h3>
+              <h3 class="profile-username text-center">Anis Aroui</h3>
 
               <p class="text-muted text-center">Software Engineer</p>
 
@@ -48,7 +48,7 @@
                 </li>
               </ul>
 
-              <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>
+            <!--  <a href="#" class="btn btn-primary btn-block"><b>Follow</b></a>-->
             </div>
             <!-- /.box-body -->
           </div>
@@ -108,9 +108,9 @@
                 <!-- Post -->
                 <div class="post">
                   <div class="user-block">
-                    <img class="img-circle img-bordered-sm" src="../dist/img/user1-128x128.jpg" alt="user image">
+                    <img class="img-circle img-bordered-sm" src="../dist/img/ghada.jpg" alt="user image">
                         <span class="username">
-                          <a href="#">Jonathan Burke Jr.</a>
+                          <a href="#">Ghada Lourimi</a>
                           <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
                         </span>
                     <span class="description">Shared publicly - 7:30 PM today</span>
@@ -139,9 +139,9 @@
                 <!-- Post -->
                 <div class="post clearfix">
                   <div class="user-block">
-                    <img class="img-circle img-bordered-sm" src="../dist/img/user7-128x128.jpg" alt="User Image">
+                    <img class="img-circle img-bordered-sm" src="../dist/img/ali.jpg" alt="User Image">
                         <span class="username">
-                          <a href="#">Sarah Ross</a>
+                          <a href="#">Ali Hosni</a>
                           <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
                         </span>
                     <span class="description">Sent you a message - 3 days ago</span>
@@ -171,9 +171,9 @@
                 <!-- Post -->
                 <div class="post">
                   <div class="user-block">
-                    <img class="img-circle img-bordered-sm" src="../dist/img/user6-128x128.jpg" alt="User Image">
+                    <img class="img-circle img-bordered-sm" src="../dist/img/moez.jpg" alt="User Image">
                         <span class="username">
-                          <a href="#">Adam Jones</a>
+                          <a href="#">Moatz Ben charrada</a>
                           <a href="#" class="pull-right btn-box-tool"><i class="fa fa-times"></i></a>
                         </span>
                     <span class="description">Posted 5 photos - 5 days ago</span>
@@ -187,13 +187,13 @@
                     <div class="col-sm-6">
                       <div class="row">
                         <div class="col-sm-6">
-                          <img class="img-responsive" src="../dist/img/photo2.png" alt="Photo">
+                          <img class="img-responsive" src="../dist/img/photomoez2.jpg" alt="Photo">
                           <br>
-                          <img class="img-responsive" src="../dist/img/photo3.jpg" alt="Photo">
+                          <img class="img-responsive" src="../dist/img/photomoez3.jpg" alt="Photo">
                         </div>
                         <!-- /.col -->
                         <div class="col-sm-6">
-                          <img class="img-responsive" src="../dist/img/photo4.jpg" alt="Photo">
+                          <img class="img-responsive" src="../dist/img/photomoez1.jpg" alt="Photo">
                           <br>
                           <img class="img-responsive" src="../dist/img/photo1.png" alt="Photo">
                         </div>
@@ -297,7 +297,7 @@
                     <div class="timeline-item">
                       <span class="time"><i class="fa fa-clock-o"></i> 2 days ago</span>
 
-                      <h3 class="timeline-header"><a href="#">Mina Lee</a> uploaded new photos</h3>
+                      <h3 class="timeline-header"><a href="#">??</a> uploaded new photos</h3>
 
                       <div class="timeline-body">
                         <img src="http://placehold.it/150x100" alt="..." class="margin">
@@ -378,10 +378,10 @@
       </div>
       <!-- /.row -->
 
-      
 
 
-<?php 
+
+<?php
 
     include('footer.php');
 
