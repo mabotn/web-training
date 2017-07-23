@@ -2,7 +2,7 @@
   session_start();
     $db = mysqli_connect('35.160.127.179','fake','true7102','fake');
 
-  $result = $db->query("SELECT id,quest FROM questions");
+  $result = $db->query("SELECT asked_by,quest FROM questions");
     ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -65,7 +65,7 @@
       <h3>Poser une question à @wafaklabi :</h3>
       <textarea id="text" name="ques" placeholder="Quoi, quand, pourquoi..pose une question" >  </textarea>
 
-      <label><input type="checkbox" id="box" checked="checked"> Demander anonymement</label>
+
       <button id="demander" class="btn pull-right" style="margin-bottom: 18px ; margin-top:5px" type="submit" name="submit">Demander</button>
     </form>
 
@@ -106,9 +106,16 @@
     </div>
     <?php
     while($row = $result->fetch_array()) {
-    echo '<div class="quest"><h1>'. $row["id"]. '</h1><br><p>' . $row["quest"].'</p><br><br><div class="aime"><i class="fa fa-heart fa-3" aria-hidden="true" ></i> <i class="fa fa-comment fa-3" aria-hidden="true" ></i></div></div>' ;
+    echo '<div class="quest"><h1>'. $row["asked_by"]. '</h1><br><p>' . $row["quest"].'</p><br><br><div class="aime"><a  href="#" role = "button"><i id="heart" class="fa fa-heart fa-3 " aria-hidden="true"  onclick="couleur()"></i></a> <br>  <textarea id="texte" name="comment" placeholder="Ajouter un commentaire" >  </textarea> <a href="#" role="button"> <i class="fa fa-comment fa-3" aria-hidden="true" ></i></a></div></div>' ;
           }
     ?>
+<script type="text/javascript">
+  var heart = document.getElementById('heart')
+  function couleur() {
+    heart.style.color= "red"
+
+}
+</script>
 
 
 
