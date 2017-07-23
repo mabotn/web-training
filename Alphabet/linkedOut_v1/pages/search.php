@@ -1,4 +1,4 @@
-<?php 
+<?php
 
     include('head.php');
     include('nav.php');
@@ -37,10 +37,10 @@
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-yellow">
               <div class="widget-user-image">
-                <img class="img-circle" src="../dist/img/user7-128x128.jpg" alt="User Avatar">
+                <img class="img-circle" src="../dist/img/anis.jpg" alt="User Avatar">
               </div>
               <!-- /.widget-user-image -->
-              <h3 class="widget-user-username">Ghada Lourimi</h3>
+              <h3 class="widget-user-username">Anis Aroui </h3>
               <h5 class="widget-user-desc">Lead Developer</h5>
             </div>
             <div class="box-footer no-padding">
@@ -64,7 +64,7 @@
               <h5 class="widget-user-desc">Founder &amp; CEO</h5>
             </div>
             <div class="widget-user-image">
-              <img class="img-circle" src="../dist/img/user1-128x128.jpg" alt="User Avatar">
+              <img class="img-circle" src="../dist/img/moez.jpg" alt="User Avatar">
             </div>
             <div class="box-footer">
               <div class="row">
@@ -104,11 +104,11 @@
           <div class="box box-widget widget-user">
             <!-- Add the bg color to the header using any of the bg-* classes -->
             <div class="widget-user-header bg-black" style="background: url('../dist/img/photo1.png') center center;">
-              <h3 class="widget-user-username">Anis El Aroui</h3>
+              <h3 class="widget-user-username">Ali Hosni</h3>
               <h5 class="widget-user-desc">Web Designer</h5>
             </div>
             <div class="widget-user-image">
-              <img class="img-circle" src="../dist/img/user2-160x160.jpg" alt="User Avatar">
+              <img class="img-circle" src="../dist/img/ali.jpg" alt="User Avatar">
             </div>
             <div class="box-footer">
               <div class="row">
@@ -149,7 +149,7 @@
 
 
 
-<?php 
+<?php
 
     include('footer.php');
 

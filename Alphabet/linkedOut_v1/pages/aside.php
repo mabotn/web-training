@@ -6,10 +6,10 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="../dist/img/user1-128x128.jpg" class="img-circle" alt="User Image">
+          <img src="../dist/img/anis.jpg" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Moetaz Ben Charrada</p>
+          <p>Anis aroui</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -19,7 +19,7 @@
 
 
 
-      
+
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
         <li class="header">MAIN NAVIGATION</li>
@@ -50,7 +50,7 @@
           </ul>
         </li>
 
-        
+
         <li>
           <a href="#">
             <i class="fa fa-envelope"></i> <span>outMail</span>
