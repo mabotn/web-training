@@ -49,7 +49,8 @@
 <div class="container">
 <div class="jumbotron cover text-center">
   <img class="ask" src="ask-01.jpg" alt="ask">
-  <span class="" id="imaage"><img id="useer"src="avatar.png" alt="user"></span>
+  <span class="" id="imaage"><img id="useer"src="avatar.png" alt="user" style="opacity: 0.7;
+    filter: alpha(opacity=50);"></span>
   <p id="name">wafa klabi</p>
   <p id="userid">@wafaklabi</p>
   <div class="profile-label">
@@ -106,7 +107,7 @@
     </div>
     <?php
     while($row = $result->fetch_array()) {
-    echo '<div class="quest"><h1>'. $row["asked_by"]. '</h1><br><p>' . $row["quest"].'</p><br><br><div class="aime"><a  href="#" role = "button"><i id="heart" class="fa fa-heart fa-3 " aria-hidden="true"  onclick="couleur()"></i></a> <br>  <textarea id="texte" name="comment" placeholder="Ajouter un commentaire" >  </textarea> <a href="#" role="button"> <i class="fa fa-comment fa-3" aria-hidden="true" ></i></a></div></div>' ;
+    echo '<div class="quest"><h1>'. $row["asked_by"]. '</h1><br><p>' . $row["quest"].'</p><br><br><div class="aime"><a  href="#" role = "button"><i id="heart" class="fa fa-heart fa-3 " aria-hidden="true"  onclick="couleur()"></i></a> </div></div>' ;
           }
     ?>
 <script type="text/javascript">
@@ -123,7 +124,7 @@
 <div class="col-md-3 ">
 
   <div class="gif" style="line-break:break all">
-  <iframe  id ="thisImg" src="https://giphy.com/embed/QEEwcJM5SiL2o" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/owl-QEEwcJM5SiL2o">via GIPHY</a></p>
+  <iframe  id ="thisImg" src="https://giphy.com/embed/QEEwcJM5SiL2o" width="270" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/owl-QEEwcJM5SiL2o"></a></p>
 
     </div>
 
